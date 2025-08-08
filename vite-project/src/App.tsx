@@ -12,7 +12,7 @@ import Logo from "./components/Logo";
 function App() {
   const [files, setFiles] = useState<VirtualFile[]>(defaultFiles);
   const [activeFile, setActiveFile] = useState<VirtualFile>(defaultFiles[0]);
-  const [output, setOutput] = useState<string>("");
+  // const [output, setOutput] = useState<string>("");
   const [aiPrompt, setAiPrompt] = useState("");
   const [terminalCommand, setTerminalCommand] = useState("");
   const [terminalMessages, setTerminalMessages] = useState<string[]>([]);
@@ -67,7 +67,7 @@ function App() {
   const loadTemplates = () => {
     setFiles(demoTemplates);
     setActiveFile(demoTemplates[0]);
-    setOutput("// Loaded template files");
+    // setOutput("// Loaded template files");
     setTerminalMessages([]);
   };
 
